@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 13 15:49:46 2020
-
-@author: Faraz
-"""
 # Multilinear Regression with Regularization using L1 and L2 norm
 import pandas as pd
 import numpy as np
@@ -12,7 +6,7 @@ import statsmodels.formula.api as smf
 import seaborn as sns
 
 # loading the data
-data = pd.read_csv("D:/Faraz/Courses/dataeerEx/Data Science Certification/WEEK-5/Lasso-Ridge Regression/ToyotaCorolla.csv")
+data = pd.read_csv("ToyotaCorolla.csv")
 
 data = data.filter(['Price','Age_08_04','KM','HP','cc','Doors','Gears','Quarterly_Tax','Weight'], axis = 1)
 data.columns = "Price","Age","KM","HP","cc","Doors","Gears","QuarterlyTax","Weight"
